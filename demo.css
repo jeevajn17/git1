@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+   justify-content: center;
+   align-items: center;
+   margin: 30px 0px 0px 0px;
+}
+.container .top h3{
+   display: flex;
+   justify-content: flex-start;
+   margin-top: 20px;
+   
+}
+.container span a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.top .fav .add {
+    display: flex;
+    justify-content: flex-end;
+    font-size: large;
+    color: rgb(244, 3, 3) ;
+    margin-bottom: 20px;
+}
+.top .fav .add:hover{
+      color: #4F575E;
+}
+
+img{
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    object-fit: cover;
+   
+}
+.btns{
+    border-radius: 10px;
+    margin:  10px 0px;
+    padding: 10px;
+    
+}
+.btns .blue{
+    color: #FFFFFF;
+    background-color: #0E3AD9;
+     border-radius: 10px;
+     border: none;
+    padding: 10px;
+    
+}
+.btns .green{
+    color: #FFFFFF;
+    background-color: rgb(5, 122, 46);
+     border-radius: 10px;
+      border: none;
+    padding: 10px;
+    
+}.btns .red{
+    color: #FFFFFF;
+    background-color: rgb(255, 85, 0);
+    border-radius: 10px;
+     border: none;
+    padding: 10px;
+    
+}
+.container .list-box{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: repeat(2, 1fr);
+    margin:0;
+  
+   
+    
+}
+
+.list-box div{
+    color:#FFFFFF;
+    border: 2px solid ;
+    border-radius: 10px;
+    background-color: #4F575E;
+    padding: 5px;
+  
+
+}
+.inst{
+    color: black;
+    line-height: 1rem;
+    margin: 10px;
+}
+.tit h3{
+    color: black;
+    padding: 10px;
+    margin-top: 10px;
+}
