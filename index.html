@@ -8,67 +8,90 @@
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100">
+
+<body class="m-0 p-0 box-border bg-white">
 
   <!-- Navbar -->
-  <nav class="bg-white shadow-md px-6 py-4 flex justify-between items-center">
-    <h2 class="text-2xl font-bold text-orange-600">Recipe App</h2>
+  <nav class="bg-[bisque] m-4 p-4 flex justify-between items-center">
+    <h2 class="text-2xl font-bold">Recipe App</h2>
 
-    <div class="flex gap-2">
-      <input 
-        type="text" 
+    <div class="flex gap-2 items-center">
+      <input
+        type="text"
         placeholder="Search recipes..."
-        class="px-4 py-2 border rounded-md font-bold outline-none"
-      >
-      <button class="bg-orange-500 text-white px-4 py-2 rounded-md">
+        class="font-bold border-none outline-none px-2 py-1 rounded"
+      />
+
+      <button class="bg-green-600 text-white px-3 py-1 rounded border-2 border-green-600">
         Search
       </button>
-      <button class="bg-gray-300 px-4 py-2 rounded-md">
+
+      <button class="bg-red-600 text-white px-3 py-1 rounded-xl border-2 border-red-600">
         X
       </button>
     </div>
   </nav>
 
   <!-- Cards Container -->
-  <div class="max-w-7xl mx-auto p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+  <div
+    class="bg-[bisque] grid grid-cols-3 gap-[50px] px-[200px] py-4 m-4"
+  >
 
     <!-- Card -->
-    <a href="list.html" class="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition">
-      <h3 class="text-xl font-semibold mb-2">Mutton Sukka</h3>
+    <a href="list.html"
+      class="bg-[aliceblue] w-[350px] rounded shadow-lg p-3 text-black hover:scale-105 transition"
+    >
+      <h3 class="text-[22px] font-bold">Mutton Sukka</h3>
 
-      <div class="flex gap-2 mb-3">
-        <span class="bg-blue-500 text-white text-sm px-2 py-1 rounded">Medium</span>
-        <span class="bg-gray-500 text-white text-sm px-2 py-1 rounded">45-60 min</span>
-        <span class="bg-red-500 text-white text-sm px-2 py-1 rounded">Non-veg</span>
+      <div class="py-3 flex gap-2 font-bold">
+        <span class="bg-blue-600 text-white px-2 py-1 rounded border border-blue-600">Medium</span>
+        <span class="bg-green-700 text-white px-2 py-1 rounded border border-green-700">45-60 min</span>
+        <span class="bg-orange-600 text-white px-2 py-1 rounded border border-orange-600">non-veg</span>
       </div>
 
-      <img src="matton-sukka.jpg" alt="Mutton Sukka" class="rounded-md w-full h-40 object-cover">
+      <img
+        src="matton-sukka.jpg"
+        alt="mutton sukka"
+        class="w-full h-[180px] object-cover rounded-lg"
+      />
     </a>
 
     <!-- Card -->
-    <a href="list.html" class="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition">
-      <h3 class="text-xl font-semibold mb-2">Shahi Korma</h3>
+    <a href="list.html"
+      class="bg-[aliceblue] w-[350px] rounded shadow-lg p-3 text-black hover:scale-105 transition"
+    >
+      <h3 class="text-[22px] font-bold">Shahi Korma</h3>
 
-      <div class="flex gap-2 mb-3">
-        <span class="bg-blue-500 text-white text-sm px-2 py-1 rounded">Medium</span>
-        <span class="bg-gray-500 text-white text-sm px-2 py-1 rounded">45-60 min</span>
-        <span class="bg-red-500 text-white text-sm px-2 py-1 rounded">Non-veg</span>
+      <div class="py-3 flex gap-2 font-bold">
+        <span class="bg-blue-600 text-white px-2 py-1 rounded">Medium</span>
+        <span class="bg-green-700 text-white px-2 py-1 rounded">45-60 min</span>
+        <span class="bg-orange-600 text-white px-2 py-1 rounded">non-veg</span>
       </div>
 
-      <img src="shohi-korma.jpg" alt="Shahi Korma" class="rounded-md w-full h-40 object-cover">
+      <img
+        src="shohi-korma.jpg"
+        alt="shahi korma"
+        class="w-full h-[180px] object-cover rounded-lg"
+      />
     </a>
 
     <!-- Card -->
-    <a href="list.html" class="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition">
-      <h3 class="text-xl font-semibold mb-2">Fish Pakora</h3>
+    <a href="list.html"
+      class="bg-[aliceblue] w-[350px] rounded shadow-lg p-3 text-black hover:scale-105 transition"
+    >
+      <h3 class="text-[22px] font-bold">Fish Pakora</h3>
 
-      <div class="flex gap-2 mb-3">
-        <span class="bg-blue-500 text-white text-sm px-2 py-1 rounded">Medium</span>
-        <span class="bg-gray-500 text-white text-sm px-2 py-1 rounded">45-60 min</span>
-        <span class="bg-red-500 text-white text-sm px-2 py-1 rounded">Non-veg</span>
+      <div class="py-3 flex gap-2 font-bold">
+        <span class="bg-blue-600 text-white px-2 py-1 rounded">Medium</span>
+        <span class="bg-green-700 text-white px-2 py-1 rounded">45-60 min</span>
+        <span class="bg-orange-600 text-white px-2 py-1 rounded">non-veg</span>
       </div>
 
-      <img src="fish-pakora.jpg" alt="Fish Pakora" class="rounded-md w-full h-40 object-cover">
+      <img
+        src="fish-pakora.jpg"
+        alt="fish pakora"
+        class="w-full h-[180px] object-cover rounded-lg"
+      />
     </a>
 
   </div>
