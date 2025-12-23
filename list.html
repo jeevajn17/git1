@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lists</title>
-    <link rel="stylesheet" href="demo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lists</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="container">
-        <div class="top">
-            <span><a href="index.html">Go Back</a></span>
-            <h3>Matton Sukka</h3>
-           <span class="fav"> <a href="index.html" class="add">+ Add to Favourites</a></span>
-        </div>
-        <img src="matton-sukka.jpg" alt="matton-sukka">
-        <div class="btns">
-            <button class="blue ">Medium</button>
-            <button class="green">45-60mins</button>
-            <button class="red">non-veg</button>
-        </div>
-        <div class="list-box">
-            <div>2 cups basmati rice</div>
-            <div>500 grams,cut into pieces</div>
-            <div>2 onions,thinly sliced</div>
-            <div>2 tomatos,chopped</div>
-            <div>2 green chillies, slit</div>
-            <div>2 teaspoons ginger-garlic paste</div>
-            <div>1/2 cuo yogurt</div>
-            <div>1 teaspoons red chili powder</div>
-            <div>1/2 teaspoons tumeric powder</div>
-            <div>1/2 teaspoons tumeric powder</div>
-            <div>1/2 teaspoons tumeric powder</div>
-            
+<body class="bg-gray-100">
 
-        </div>
-        <div class="tit">
-            <div>
-                <h3>Instructions:</h3>
-                <ol class="inst">
-                   <li> <p>Wash and soak basmati rice in water for 30 minutes. Drain the water.</p></li>
-                    <li> <p>Heat oil or ghee in a pan and add whole spices. Sauté for a minute until aromatic.</p></li>
-                    <li> <p>Add thinly sliced onions and cook until golden brown..</p></li>
-                    <li> <p>Add ginger-garlic paste and sauté for a minute.</p></li>
-                   <li> <p>Add chopped tomatoes and cook until they turn mushy.</p></li>
-                   <li> <p>Add chicken pieces, green chilies, red chili powder, turmeric powder, biryani masala powder, and salt. Mix well.</p></li>
-                   <li> <p>Add chopped tomatoes and cook until they turn mushy.</p></li>
-                   <li> <p>Add chopped tomatoes and cook until they turn mushy.</p></li>
-                   <li> <p>Add chopped tomatoes and cook until they turn mushy.</p></li>
-                   <li> <p>Add chopped tomatoes and cook until they turn mushy.</p></li>
-                    
-                </ol>
-            </div>
-        </div>
+  <div class="max-w-4xl mx-auto bg-white p-6 mt-6 rounded-lg shadow-md">
 
+    <!-- Top bar -->
+    <div class="flex justify-between items-center mb-4">
+      <a href="index.html" class="text-blue-600 font-semibold">← Go Back</a>
+      <h3 class="text-xl font-bold">Mutton Sukka</h3>
+      <a href="#" class="text-red-500 font-semibold">+ Add to Favourites</a>
     </div>
-</body>
-</html>
+
+    <!-- Image -->
+    <img 
+      src="matton-sukka.jpg" 
+      alt="mutton sukka"
+      class="w-full h-64 object-cover rounded-md mb-4"
+    >
+
+    <!-- Buttons -->
+    <div class="flex gap-3 mb-6">
+      <span class="bg-blue-500 text-white px-3 py-1 rounded">Medium</span>
+      <span class="bg-green-500 text-white px-3 py-1 rounded">45-60 mins</span>
+      <span class="bg-red-500 text-white px-3 py-1 rounded">Non-veg</span>
+    </div>
+
+    <!-- Ingredients -->
+    <h3 class="text-lg font-semibold mb-2">Ingredients</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6">
+      <div class="bg-gray-100 p-2 rounded">2 cups basmati rice</div>
+      <div class="bg-gray-100 p-2 rounded">500 grams mutton (cut pieces)</div>
+      <div class="bg-gray-100 p-2 rounded">2 onions, thinly sliced</div>
+      <div class="bg-gray-100 p-2 rounded">2 tomatoes, chopped</div>
+      <div class="bg-gray-100 p-2 rounded">2 green chillies</div>
+      <div class="bg-gray-100 p-2 rounded">2 tsp ginger-garlic paste</div>
+      <div class="bg-gray-100 p-2 rounded">1/2 cup yogurt</div>
+      <div class="bg-gray-100 p-2 rounded">1 tsp red chilli powder</div>
+      <div class="bg-gray-100 p-2 rounded">1/2 tsp turmeric powder</div>
+    </div>
+
+    <!-- Instructions -->
+    <h3 class="text-lg font-semibold mb-2">Instructions</h3>
+    <ol class="list-decimal list-inside space-y-2">
+      <li>Wash and soak basmati rice for 30 minutes and drain.</li>
+      <li>Heat oil or ghee and add whole spices. Sauté until aromatic.</li>
+      <li>Add sliced onions and cook until golden brown.</li>
+      <li>Add ginger-garlic paste and sauté for a minute.</li>
+      <li>Add chopped tomatoes and cook until mushy.</li>
+      <li>Add mutton, green chillies, chilli powder, turmeric and salt.</li>
+      <li>Mix well and cook until the meat is tender.</li>
+      <li>Add soaked r
