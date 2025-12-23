@@ -1,101 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe App</title>
-    <link rel="icon" href="">
-    <link rel="stylesheet" href="recipe.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe App</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <nav class="nav-bar">
-            <h2>Recipe App</h2>
-            <div class="search-box">
-                <input type="text" placeholder="Search receipes..." style="font-weight: bolder; border: none;">
-                <button><a href="#">Search</button></a>
-                <button class="btn">X</button>
-  
-            </div>
-        
-    </nav>
-    <div class="container">
-                
-            <div class="card"><a href="list.html">
-                <h3>Mutton Sukka</h3>
-                <div class="tags">
-                <button class="blue">Medium</button>
-                <button class="min">45-60 min</button>
-                <button class="non-veg">non-veg</button>
-                </div>
-                <div class="img-box">
-                    <img src="matton-sukka.jpg" alt="matton-sukka">
-                </div>
-                </a>
-            </div>
+<body class="bg-gray-100">
 
-              <div class="card"><a href="list.html">
-                <h3>Shahi Korma</h3>
-                <div class="tags">
-                 <button class="blue">Medium</button>
-                 <button class="min">45-60 min</button>
-                 <button class="non-veg">non-veg</button>
-                </div>
-                <div class="img-box">
-                    <img src="shohi-korma.jpg" alt="Shahi korma">
-                </div></a>
-                
-            </div>
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md px-6 py-4 flex justify-between items-center">
+    <h2 class="text-2xl font-bold text-orange-600">Recipe App</h2>
 
-            <div class="card"><a href="list.html">
-                <h3>Fish pakora</h3>
-                <div class="tags">
-                <button class="blue">Medium</button>
-                <button class="min">45-60 min</button>
-                <button class="non-veg">non-veg</button>
-                </div>
-                <div class="img-box">
-                    <img src="fish-pakora.jpg" alt="Fish">
-                </div></a>
-                
-            </div>
-            <div class="card"><a href="list.html">
-                <h3>Idly</h3>
-                <div class="tags">
-                <button class="blue">Medium</button>
-                <button class="min">45-60 min</button>
-                <button class="non-veg">non-veg</button>
-                </div>
-                <div class="img-box">
-                    <img src="idly.jpg" alt="idly">
-                </div></a>
-                
-            </div>
-            <div class="card"><a href="list.html">
-                <h3>Tomato Rice</h3>
-                <div class="tags">
-                <button class="blue">Medium</button>
-                <button class="min">45-60 min</button>
-                <button class="non-veg">non-veg</button>
-                </div>
-                <div class="img-box">
-                    <img src="tomato-rice.jpg" alt="Fish">
-                </div></a>
-                
-            </div>
-            <div class="card"><a href="list.html">
-                <h3>Paniyaram</h3>
-                <div class="tags">
-                <button class="blue">Medium</button>
-                <button class="min">45-60 min</button>
-                <button class="non-veg">non-veg</button>
-                </div>
-                <div class="img-box">
-                    <img src="paniyaram.jpg" alt="Fish">
-                </div></a>
-                
-            </div>
-            
-            
-    </div>   
+    <div class="flex gap-2">
+      <input 
+        type="text" 
+        placeholder="Search recipes..."
+        class="px-4 py-2 border rounded-md font-bold outline-none"
+      >
+      <button class="bg-orange-500 text-white px-4 py-2 rounded-md">
+        Search
+      </button>
+      <button class="bg-gray-300 px-4 py-2 rounded-md">
+        X
+      </button>
+    </div>
+  </nav>
+
+  <!-- Cards Container -->
+  <div class="max-w-7xl mx-auto p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+    <!-- Card -->
+    <a href="list.html" class="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition">
+      <h3 class="text-xl font-semibold mb-2">Mutton Sukka</h3>
+
+      <div class="flex gap-2 mb-3">
+        <span class="bg-blue-500 text-white text-sm px-2 py-1 rounded">Medium</span>
+        <span class="bg-gray-500 text-white text-sm px-2 py-1 rounded">45-60 min</span>
+        <span class="bg-red-500 text-white text-sm px-2 py-1 rounded">Non-veg</span>
+      </div>
+
+      <img src="matton-sukka.jpg" alt="Mutton Sukka" class="rounded-md w-full h-40 object-cover">
+    </a>
+
+    <!-- Card -->
+    <a href="list.html" class="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition">
+      <h3 class="text-xl font-semibold mb-2">Shahi Korma</h3>
+
+      <div class="flex gap-2 mb-3">
+        <span class="bg-blue-500 text-white text-sm px-2 py-1 rounded">Medium</span>
+        <span class="bg-gray-500 text-white text-sm px-2 py-1 rounded">45-60 min</span>
+        <span class="bg-red-500 text-white text-sm px-2 py-1 rounded">Non-veg</span>
+      </div>
+
+      <img src="shohi-korma.jpg" alt="Shahi Korma" class="rounded-md w-full h-40 object-cover">
+    </a>
+
+    <!-- Card -->
+    <a href="list.html" class="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition">
+      <h3 class="text-xl font-semibold mb-2">Fish Pakora</h3>
+
+      <div class="flex gap-2 mb-3">
+        <span class="bg-blue-500 text-white text-sm px-2 py-1 rounded">Medium</span>
+        <span class="bg-gray-500 text-white text-sm px-2 py-1 rounded">45-60 min</span>
+        <span class="bg-red-500 text-white text-sm px-2 py-1 rounded">Non-veg</span>
+      </div>
+
+      <img src="fish-pakora.jpg" alt="Fish Pakora" class="rounded-md w-full h-40 object-cover">
+    </a>
+
+  </div>
+
 </body>
 </html>
