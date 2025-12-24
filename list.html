@@ -8,53 +8,112 @@
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100">
 
-  <div class="max-w-4xl mx-auto bg-white p-6 mt-6 rounded-lg shadow-md">
+<body class="m-0 p-0 box-border">
 
-    <!-- Top bar -->
-    <div class="flex justify-between items-center mb-4">
-      <a href="index.html" class="text-blue-600 font-semibold">← Go Back</a>
-      <h3 class="text-xl font-bold">Mutton Sukka</h3>
-      <a href="#" class="text-red-500 font-semibold">+ Add to Favourites</a>
+  <!-- Container -->
+  <div class="grid justify-center items-center mt-[30px]">
+
+    <!-- Top Section -->
+    <div class="flex justify-between items-center w-full mb-5">
+      <span>
+        <a href="index.html" class="font-bold text-black no-underline">   Go Back
+        </a>
+        
+      <h3 class="font-bold mt-5 ">Matton Sukka</h3>
+        </span>
+
+
+      <span>
+        <a href="index.html"
+           class="font-bold text-lg text-red-600 hover:text-[#4F575E]">
+          + Add to Favourites
+        </a>
+      </span>
     </div>
 
     <!-- Image -->
-    <img 
-      src="matton-sukka.jpg" 
-      alt="mutton sukka"
-      class="w-full h-64 object-cover rounded-md mb-4"
+    <img
+      src="matton-sukka.jpg"
+      alt="matton-sukka"
+      class="w-full h-[350px] rounded-lg object-cover"
     >
 
     <!-- Buttons -->
-    <div class="flex gap-3 mb-6">
-      <span class="bg-blue-500 text-white px-3 py-1 rounded">Medium</span>
-      <span class="bg-green-500 text-white px-3 py-1 rounded">45-60 mins</span>
-      <span class="bg-red-500 text-white px-3 py-1 rounded">Non-veg</span>
+    <div class="rounded-lg my-3 p-3 flex gap-3">
+      <button class="bg-[#0E3AD9] text-white px-4 py-2 rounded-lg border-none">
+        Medium
+      </button>
+      <button class="bg-green-700 text-white px-4 py-2 rounded-lg border-none">
+        45-60mins
+      </button>
+      <button class="bg-orange-500 text-white px-4 py-2 rounded-lg border-none">
+        non-veg
+      </button>
     </div>
 
-    <!-- Ingredients -->
-    <h3 class="text-lg font-semibold mb-2">Ingredients</h3>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6">
-      <div class="bg-gray-100 p-2 rounded">2 cups basmati rice</div>
-      <div class="bg-gray-100 p-2 rounded">500 grams mutton (cut pieces)</div>
-      <div class="bg-gray-100 p-2 rounded">2 onions, thinly sliced</div>
-      <div class="bg-gray-100 p-2 rounded">2 tomatoes, chopped</div>
-      <div class="bg-gray-100 p-2 rounded">2 green chillies</div>
-      <div class="bg-gray-100 p-2 rounded">2 tsp ginger-garlic paste</div>
-      <div class="bg-gray-100 p-2 rounded">1/2 cup yogurt</div>
-      <div class="bg-gray-100 p-2 rounded">1 tsp red chilli powder</div>
-      <div class="bg-gray-100 p-2 rounded">1/2 tsp turmeric powder</div>
+    <!-- Ingredients Grid -->
+    <div class="grid grid-cols-4 gap-2">
+
+      <div class="bg-[#4F575E] text-white border-2 rounded-lg p-2">
+        2 cups basmati rice
+      </div>
+      <div class="bg-[#4F575E] text-white border-2 rounded-lg p-2">
+        500 grams, cut into pieces
+      </div>
+      <div class="bg-[#4F575E] text-white border-2 rounded-lg p-2">
+        2 onions, thinly sliced
+      </div>
+      <div class="bg-[#4F575E] text-white border-2 rounded-lg p-2">
+        2 tomatoes, chopped
+      </div>
+      <div class="bg-[#4F575E] text-white border-2 rounded-lg p-2">
+        2 green chillies, slit
+      </div>
+      <div class="bg-[#4F575E] text-white border-2 rounded-lg p-2">
+        2 tsp ginger-garlic paste
+      </div>
+      <div class="bg-[#4F575E] text-white border-2 rounded-lg p-2">
+        1/2 cup yogurt
+      </div>
+      <div class="bg-[#4F575E] text-white border-2 rounded-lg p-2">
+        1 tsp red chili powder
+      </div>
+      <div class="bg-[#4F575E] text-white border-2 rounded-lg p-2">
+        1/2 tsp turmeric powder
+      </div>
+      <div class="bg-[#4F575E] text-white border-2 rounded-lg p-2">
+        1/2 tsp turmeric powder
+      </div>
+      <div class="bg-[#4F575E] text-white border-2 rounded-lg p-2">
+        1/2 tsp turmeric powder
+      </div>
+
     </div>
 
     <!-- Instructions -->
-    <h3 class="text-lg font-semibold mb-2">Instructions</h3>
-    <ol class="list-decimal list-inside space-y-2">
-      <li>Wash and soak basmati rice for 30 minutes and drain.</li>
-      <li>Heat oil or ghee and add whole spices. Sauté until aromatic.</li>
-      <li>Add sliced onions and cook until golden brown.</li>
-      <li>Add ginger-garlic paste and sauté for a minute.</li>
-      <li>Add chopped tomatoes and cook until mushy.</li>
-      <li>Add mutton, green chillies, chilli powder, turmeric and salt.</li>
-      <li>Mix well and cook until the meat is tender.</li>
-      <li>Add soaked r
+    <div class="mt-5">
+      <h3 class="text-black p-3 mt-3 font-bold">
+        Instructions:
+      </h3>
+
+      <ol class="text-black leading-4 m-3 list-decimal list-inside space-y-2">
+        <li>Wash and soak basmati rice in water for 30 minutes. Drain.</li>
+        <li>Heat oil or ghee and add whole spices. Sauté until aromatic.</li>
+        <li>Add sliced onions and cook until golden brown.</li>
+        <li>Add ginger-garlic paste and sauté for a minute.</li>
+        <li>Add chopped tomatoes and cook until mushy.</li>
+        <li>Add chicken, green chillies, chilli powder, turmeric and salt.</li>
+        <li>Add chopped tomatoes and cook until mushy.</li>
+        <li>Add chopped tomatoes and cook until mushy.</li>
+        <li>Add chopped tomatoes and cook until mushy.</li>
+        <li>Add chopped tomatoes and cook until mushy.</li>
+      </ol>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
+
